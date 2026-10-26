@@ -1,0 +1,68 @@
+# Copy to <kb path>/competitive-kb/config/home-vendor.yaml and fill in.
+# Keep the filled-in copy private.
+
+home_vendor: "<home vendor>"
+kb_path: "<kb path>/competitive-kb"
+operations_agent: "<operations agent>"   # where infra/lab work is routed
+
+product_lines:
+  - id: compute-hypervisor
+    name: "<product line: HCI / hypervisor>"
+    products: ["<product>"]
+    competitors: ["<competitor>", "<competitor>"]
+  - id: management-plane
+    name: "<product line: management / operations>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: hybrid-multicloud
+    name: "<product line: hybrid multicloud>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: unified-storage
+    name: "<product line: files / objects / volumes>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: database-service
+    name: "<product line: database-as-a-service>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: kubernetes-platform
+    name: "<product line: Kubernetes platform>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: ai-infrastructure
+    name: "<product line: enterprise AI infrastructure>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: network-security
+    name: "<product line: microsegmentation / security>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: migration
+    name: "<product line: workload migration>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+  - id: euc-daas
+    name: "<product line: EUC / DaaS>"
+    products: ["<product>"]
+    competitors: ["<competitor>"]
+
+competitor_categories:     # used by competitor-map
+  - direct
+  - adjacent-platform
+  - oem-hardware
+  - public-cloud
+  - emerging
+  - status-quo-diy
+
+analyst_sources:           # generic source types; add editions as you log them
+  - Gartner (Magic Quadrant, Critical Capabilities, Peer Insights)
+  - IDC (MarketScape, market share trackers)
+  - Forrester (Wave)
+  - GigaOm (Radar)
+
+staleness_days:
+  pricing_licensing: 90
+  capabilities: 180
+  roadmap: 90
+  news: 30

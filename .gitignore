@@ -1,0 +1,4 @@
+private-kb/
+kb/
+*.local.*
+config/home-vendor.yaml
